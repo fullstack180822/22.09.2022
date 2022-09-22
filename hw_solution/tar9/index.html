@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS prompt</title>
+</head>
+<body>
+    <h1>reverse</h1>
+    <script>
+        two_digit_number = parseInt(prompt('Enter 2 digit number (10-99):'))
+        document.write(`your number = ${two_digit_number}<br />`)
+        
+        ahadot = two_digit_number % 10
+        asarot = Math.floor(two_digit_number / 10)
+
+        reverse_number = asarot + ahadot * 10
+        document.write(`digit sum: ${reverse_number}`)
+    </script>
+</body>
+</html>
