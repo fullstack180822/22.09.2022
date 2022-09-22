@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS prompt</title>
+</head>
+<body>
+    <h1>If nested</h1>
+    <script>
+        //debugger;
+        x = parseInt(prompt('Enter number #1: '))
+        y = parseInt(prompt('Enter number #2: '))
+        z = parseInt(prompt('Enter number #3: '))
+
+        if (x > y) {
+            // true: x > y
+            if (x > z) {
+                // true: x > z
+                document.write(`${x} is the biggest`)
+            }
+            else {
+                // false: x not > z
+                document.write(`${z} is the biggest`)
+            }
+        }
+        else {
+          // false: x not > y
+          if (y > z) {
+            // true: y > z
+            document.write(`${y} is the biggest`)
+          }
+          else {
+            // false: y not > z
+            document.write(`${z} is the biggest`)
+          }
+        }
+
+        document.write(`<br />Goodbye`)
+    </script>
+</body>
+</html>
